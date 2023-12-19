@@ -140,6 +140,20 @@ MarkupSafe = ">=2.0"
 i18n = ["Babel (>=2.7)"]
 
 [[package]]
+name = "liturgical-colour"
+version = "0.0.1"
+description = "Library to determine liturgical dates and colours for the Anglican Church of England"
+optional = false
+python-versions = ">=3.11,<4.0"
+files = [
+    {file = "liturgical_colour-0.0.1-py3-none-any.whl", hash = "sha256:d53fc86959eb0b69750a6ba1492c26073475768f6de1538632b72a71671123c6"},
+    {file = "liturgical_colour-0.0.1.tar.gz", hash = "sha256:cb02221365900499bb1399aa905e46c042515fd668d902fb69838c087580cfa8"},
+]
+
+[package.dependencies]
+python-dateutil = ">=2.8.2,<3.0.0"
+
+[[package]]
 name = "markupsafe"
 version = "2.1.3"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -273,6 +287,31 @@ spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
 
 [[package]]
+name = "python-dateutil"
+version = "2.8.2"
+description = "Extensions to the standard Python datetime module"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+files = [
+    {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
+    {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+
+[[package]]
 name = "tomlkit"
 version = "0.12.3"
 description = "Style preserving TOML library"
@@ -303,4 +342,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "dace0406e7f781e3331bc8123097c40783e90ecf1e88ef089f5b15d1362cba32"
+content-hash = "052d50c7c33684e885976f10b023fc5a99b04e65b7c080f37b92e7a2b99dcf5f"
