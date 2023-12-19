@@ -1,0 +1,8 @@
+<html>
+<head><title>Liturgical Colour</title></head>
+<body>
+<p>Today is {{ dayinfo['date'] }}</p>
+<p>The week is {{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</p>
+{% if dayinfo['name'] %}<p>Today is a Holy Day: {{ dayinfo['name'] }}</p>{% endif %}
+<p style="color:{{ dayinfo['colourcode'] }}">The liturgical colour is {{ dayinfo['colour'] }}</p>
+</body></html>
