@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Today is {{ dayinfo['date'] }}</h1>
+            <h1 class="display-4">{{ longdate }}</h1>
             {% if dayinfo['name'] %}<p class="lead">Today is a Holy Day: {{ dayinfo['name'] }}</p>{% endif %}
             <hr class="my-4">
             <p>The week is {{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</p>

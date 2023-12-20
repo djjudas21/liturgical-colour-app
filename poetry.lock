@@ -141,13 +141,13 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "liturgical-colour"
-version = "0.0.1"
+version = "0.0.2"
 description = "Library to determine liturgical dates and colours for the Anglican Church of England"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "liturgical_colour-0.0.1-py3-none-any.whl", hash = "sha256:d53fc86959eb0b69750a6ba1492c26073475768f6de1538632b72a71671123c6"},
-    {file = "liturgical_colour-0.0.1.tar.gz", hash = "sha256:cb02221365900499bb1399aa905e46c042515fd668d902fb69838c087580cfa8"},
+    {file = "liturgical_colour-0.0.2-py3-none-any.whl", hash = "sha256:e64535f1598966b931fd55de534998a0a2d143129a229c15d2d2c1094b5ee039"},
+    {file = "liturgical_colour-0.0.2.tar.gz", hash = "sha256:c453e7e6990d4c4c6fe4b0653b3b924878c979e5e722f1f65f451bbb75521840"},
 ]
 
 [package.dependencies]
@@ -342,4 +342,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "052d50c7c33684e885976f10b023fc5a99b04e65b7c080f37b92e7a2b99dcf5f"
+content-hash = "0ca341c5afe32eac3611b8f2c5139b6f783683f5424778e5d33a2f6022d2226a"
