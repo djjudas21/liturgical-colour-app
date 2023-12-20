@@ -1,8 +1,32 @@
-<html>
-<head><title>Liturgical Colour</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Liturgical Colour</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: {{ dayinfo['colourcode'] }};
+            background-image: linear-gradient(225deg, {{ dayinfo['colourcode'] }} 0%, #000000 100%);
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 100%;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
 <body>
-<p>Today is {{ dayinfo['date'] }}</p>
-<p>The week is {{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</p>
-{% if dayinfo['name'] %}<p>Today is a Holy Day: {{ dayinfo['name'] }}</p>{% endif %}
-<p style="color:{{ dayinfo['colourcode'] }}">The liturgical colour is {{ dayinfo['colour'] }}</p>
-</body></html>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Today is {{ dayinfo['date'] }}</h1>
+            {% if dayinfo['name'] %}<p class="lead">Today is a Holy Day: {{ dayinfo['name'] }}</p>{% endif %}
+            <hr class="my-4">
+            <p>The week is {{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</p>
+            <p>The liturgical colour is {{ dayinfo['colour'] }}</p>
+        </div>
+    </div>
+</body>
+</html>
