@@ -1,2 +1,2 @@
 Flask >= "3.0.0"
-liturgical-colour >= "0.0.2"
+liturgical-colour >= "0.0.3"
