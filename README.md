@@ -6,6 +6,9 @@ It is based on the [Liturgical Colour](https://github.com/djjudas21/liturgical-c
 library with a simple UI written with [Flask](https://pypi.org/project/Flask/)
 and [Bootstrap](https://getbootstrap.com/).
 
+The [Latin Cross](https://icons8.com/icon/A51q2n9iZRkQ/latin-cross) icon was
+provided by [Icons8](https://icons8.com).
+
 ## Develop
 
 The app can be run locally for testing with
