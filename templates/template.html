@@ -10,7 +10,6 @@
             background-color: {{ dayinfo['colourcode'] }};
             background-image: linear-gradient(225deg, {{ dayinfo['colourcode'] }} 0%, #000000 100%);
             background-repeat: no-repeat;
-            background-repeat: no-repeat;
             background-size: cover;
             min-width: 100%;
             min-height: 100vh;
@@ -24,12 +23,20 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">{{ longdate }}</h1>
+            <div class="row">
+                <div class="col-md-9"><h2 class="display-4">{{ longdate }}</h2></div>
+                <div class="col-md-3 text-right">
+                    <form method="post">
+                        <input type="date" name="date" value="{{ shortdate }}"/>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
             {% if dayinfo['name'] -%}
                 <p class="lead">Today is the <a href="{{ dayinfo['type_url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['type'] }}</a> of {%if dayinfo['url'] %}
                 <a href="{{ dayinfo['url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['name'] }}</a>{% else %}{{ dayinfo['name'] }}{% endif %}</p>
             {% endif -%}
-            <hr class="my-4">
             <p>The week is <a href="{{ dayinfo['season_url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</a></p>
             <p>The liturgical colour is {{ dayinfo['colour'] }}</p>
         </div>
