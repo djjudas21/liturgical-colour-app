@@ -37,7 +37,7 @@
                 <p class="lead">Today is the <a href="{{ dayinfo['type_url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['type'] }}</a> of {%if dayinfo['url'] %}
                 <a href="{{ dayinfo['url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['name'] }}</a>{% else %}{{ dayinfo['name'] }}{% endif %}</p>
             {% endif -%}
-            <p>The week is <a href="{{ dayinfo['season_url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['season'] }} {{ dayinfo['weekno'] }}</a></p>
+            <p>The week is <a href="{{ dayinfo['season_url'] }}" target="_blank" rel="noopener noreferrer">{{ dayinfo['week'] }}</a></p>
             <p>The liturgical colour is {{ dayinfo['colour'] }}</p>
         </div>
     </div>
