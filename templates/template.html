@@ -33,6 +33,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/static/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/add-to-homescreen.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/add-to-homescreen.min.js"></script>
     <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -74,5 +76,21 @@
     <a target="_blank" href="https://icons8.com/icon/A51q2n9iZRkQ/latin-cross">Icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+ window.AddToHomeScreenInstance = window.AddToHomeScreen({
+  appName: 'Liturgical Colour',
+  appNameDisplay: 'standalone',                          
+  appIconUrl: 'apple-touch-icon.png',
+  assetUrl: 'https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/assets/img/',
+  maxModalDisplayCount: -1,                              // If set, the modal will only show this many times.
+                                                         // [Optional] Default: -1 (no limit).  (Debugging: Use this.clearModalDisplayCount() to reset the count)
+  displayOptions:{ showMobile: true, showDesktop: true }, // show on mobile/desktop [Optional] Default: show everywhere
+  allowClose: true, // allow the user to close the modal by tapping outside of it [Optional. Default: true]
+});
+
+ ret = window.AddToHomeScreenInstance.show('en');        // show "add-to-homescreen" instructions to user, or do nothing if already added to homescreen
+});
+</script>
 </body>
 </html>
