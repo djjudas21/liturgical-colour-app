@@ -40,5 +40,47 @@
    "type": "image/png",
    "density": "4.0"
   }
+ ],
+ "screenshots": [
+  {
+    "src": "screenshots/desktop-green.webp",
+    "type": "image/webp",
+    "form_factor": "wide"
+  },
+  {
+    "src": "screenshots/desktop-purple.webp",
+    "type": "image/webp",
+    "form_factor": "wide"
+  },
+  {    
+    "src": "screenshots/desktop-red.webp",
+    "type": "image/webp",
+    "form_factor": "wide"
+  },
+  {
+    "src": "screenshots/desktop-white.webp",
+    "type": "image/webp",
+    "form_factor": "wide"
+  },
+  {    
+    "src": "screenshots/mobile-green.webp",
+    "type": "image/webp",
+    "platform": "ios"
+  },
+  {
+    "src": "screenshots/mobile-purple.webp",
+    "type": "image/webp",
+    "platform": "ios"
+  },
+  {
+    "src": "screenshots/mobile-red.webp",
+    "type": "image/webp",
+    "platform": "ios"
+  },
+  {
+    "src": "screenshots/mobile-white.webp",
+    "type": "image/webp",
+    "platform": "ios"
+  }
  ]
 }
