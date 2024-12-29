@@ -1,6 +1,7 @@
 {
  "name": "Liturgical Colour",
  "short_name": "Liturgical",
+ "start_url": "/",
  "display": "standalone",
  "icons": [
   {
