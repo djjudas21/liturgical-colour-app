@@ -6,6 +6,9 @@ It is based on the [Liturgical Colour](https://github.com/djjudas21/liturgical-c
 library with a simple UI written with [Flask](https://pypi.org/project/Flask/)
 and [Bootstrap](https://getbootstrap.com/).
 
+It is written as a [progressive web app](https://en.wikipedia.org/wiki/Progressive_web_app)
+so it can easily be added to your homescreen as an app icon.
+
 The [Latin Cross](https://icons8.com/icon/A51q2n9iZRkQ/latin-cross) icon was
 provided by [Icons8](https://icons8.com).
 

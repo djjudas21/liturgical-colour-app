@@ -16,8 +16,36 @@
             padding-top: 25px;
         }
     </style>
-    <link rel="icon" href="https://img.icons8.com/emoji/48/latin-cross-emoji.png">
-    <link rel="apple-touch-icon" href="https://img.icons8.com/emoji/96/latin-cross-emoji.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/static/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/add-to-homescreen.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/add-to-homescreen.min.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register("/sw.js").then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -48,5 +76,21 @@
     <a target="_blank" href="https://icons8.com/icon/A51q2n9iZRkQ/latin-cross">Icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+ window.AddToHomeScreenInstance = window.AddToHomeScreen({
+  appName: 'Liturgical Colour',
+  appNameDisplay: 'standalone',                          
+  appIconUrl: 'static/icons/apple-icon.png',
+  assetUrl: 'https://cdn.jsdelivr.net/gh/philfung/add-to-homescreen@2.93/dist/assets/img/',
+  maxModalDisplayCount: -1,                              // If set, the modal will only show this many times.
+                                                         // [Optional] Default: -1 (no limit).  (Debugging: Use this.clearModalDisplayCount() to reset the count)
+  displayOptions:{ showMobile: true, showDesktop: true }, // show on mobile/desktop [Optional] Default: show everywhere
+  allowClose: true, // allow the user to close the modal by tapping outside of it [Optional. Default: true]
+});
+
+ ret = window.AddToHomeScreenInstance.show('en');        // show "add-to-homescreen" instructions to user, or do nothing if already added to homescreen
+});
+</script>
 </body>
 </html>
