@@ -45,41 +45,49 @@
   {
     "src": "/static/screenshots/desktop-green.webp",
     "type": "image/webp",
+    "sizes": "2560x1292",
     "form_factor": "wide"
   },
   {
     "src": "/static/screenshots/desktop-purple.webp",
     "type": "image/webp",
+    "sizes": "2560x1292",
     "form_factor": "wide"
   },
   {    
     "src": "/static/screenshots/desktop-red.webp",
     "type": "image/webp",
+    "sizes": "2560x1292",
     "form_factor": "wide"
   },
   {
     "src": "/static/screenshots/desktop-white.webp",
     "type": "image/webp",
+    "sizes": "2560x1292",
     "form_factor": "wide"
   },
   {    
     "src": "/static/screenshots/mobile-green.webp",
     "type": "image/webp",
+    "sizes": "1125x1903",
     "platform": "ios"
   },
   {
     "src": "/static/screenshots/mobile-purple.webp",
     "type": "image/webp",
+    "sizes": "1125x1903",
     "platform": "ios"
   },
   {
     "src": "/static/screenshots/mobile-red.webp",
     "type": "image/webp",
+    "sizes": "1125x1903",
     "platform": "ios"
   },
   {
     "src": "/static/screenshots/mobile-white.webp",
     "type": "image/webp",
+    "sizes": "1125x1903",
     "platform": "ios"
   }
  ]
